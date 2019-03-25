@@ -1,17 +1,3 @@
-# PlayerLink Configuration File
-# =============================
-# Created by: jflory7
-#
-# Official BukkitDev Page:
-# http://s.ccmc.pw/PlayerLink
-#
-# Give me a diamond on PlanetMinecraft!
-# http://s.ccmc.pw/PlayerLink_PMC
-#
-# Get help on setting up the config.yml file here:
-# http://s.ccmc.pw/19Xa59i
-
-auto-update: true
 server-name: A Minecraft Server
 website:
   url: http://minecraft.net

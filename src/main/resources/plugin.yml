@@ -1,146 +1,146 @@
-name: PlayerLink
+name: IO-Accounts
 main: org.iocraft.accounts.Main
-version: 1.4.3
-description: PlayerLink is a Bukkit plugin designed to keep your players informed about your server.
-author: jflory7
-website: http://dev.bukkit.org/bukkit-plugins/playerlink/
+version: 1.0.0
+description: IO-Accounts is a plugin designed for database accounting of players. Mostly for our wiki users.
+author: ioCraft.org Team
+website: https://www.iocraft.org
 
 commands:
-   playerlink:
+   accounts:
       description: Includes info and reloads.
-      usage: /playerlink <help, reload>
+      usage: /accounts <help, reload>
    website:
       description: Shows the link to a website you set.
       usage: /website
-      permission: playerlink.website
+      permission: accounts.website
       permission-message: You don't have <permission>
    vote:
       description: Shows the link to a voting website you set.
       usage: /vote
-      permission: playerlink.vote
+      permission: accounts.vote
       permission-message: You don't have <permission>
    forums:
       description: Shows the link to a forum you set.
       usage: /forums
-      permission: playerlink.forums
+      permission: accounts.forums
       permission-message: You don't have <permission>
    shop:
       description: Shows the link to a server shop you set.
       usage: /shop
-      permission: playerlink.shop
+      permission: accounts.shop
       permission-message: You don't have <permission>
    voice:
       description: Shows the IP to a voice server you set.
       usage: /voice
-      permission: playerlink.voice
+      permission: accounts.voice
       permission-message: You don't have <permission>
    map:
       description: Shows the link to a DynMap page you set.
       usage: /map
-      permission: playerlink.dynmap
+      permission: accounts.dynmap
       permission-message: You don't have <permission>
    wiki:
       description: Shows the link to a wiki you set.
       usage: /wiki
-      permission: playerlink.wiki
+      permission: accounts.wiki
       permission-message: You don't have <permission>
    facebook:
       description: Shows the link to a Facebook page.
       usage: /facebook
-      permission: playerlink.facebook
+      permission: accounts.facebook
       permission-message: You don't have <permission>
    twitter:
       description: Shows the link to a Twitter page.
       usage: /twitter
-      permission: playerlink.twitter
+      permission: accounts.twitter
       permission-message: You don't have <permission>
    youtube:
       description: Shows the link to a YouTube page.
       usage: /youtube
-      permission: playerlink.youtube
+      permission: accounts.youtube
       permission-message: You don't have <permission>
    google+:
       description: Shows the link to a Google+ page you set.
       usage: /google+
-      permission: playerlink.googleplus
+      permission: accounts.googleplus
       permission-message: You don't have <permission>
    instagram:
       description: Shows the link to an Instagram page you set.
       usage: /instagram
-      permission: playerlink.instagram
+      permission: accounts.instagram
       permission-message: You don't have <permission>
    link:
       description: Shows the link to any URL you set.
       usage: /link
-      permission: playerlink.link
+      permission: accounts.link
       permission-message: You don't have <permission>
 
 permissions:
-    playerlink.*:
-        description: Gives access to all PlayerLink commands.
+    accounts.*:
+        description: Gives access to all IO-Accounts commands.
         children:
-            playerlink.player.*: true
-            playerlink.reload: true
-    playerlink.player.*:
+            accounts.player.*: true
+            accounts.reload: true
+    accounts.player.*:
         description: Gives access to all player commands.
         children:
-            playerlink.help: true
-            playerlink.website: true
-            playerlink.vote: true
-            playerlink.forums: true
-            playerlink.shop: true
-            playerlink.voice: true
-            playerlink.dynmap: true
-            playerlink.wiki: true
-            playerlink.facebook: true
-            playerlink.twitter: true
-            playerlink.youtube: true
-            playerlink.googleplus: true
-            playerlink.instagram: true
-            playerlink.link: true
-            playerlink.reload: false
-    playerlink.help:
-        description: Show a list of commands for PlayerLink.
+            accounts.help: true
+            accounts.website: true
+            accounts.vote: true
+            accounts.forums: true
+            accounts.shop: true
+            accounts.voice: true
+            accounts.dynmap: true
+            accounts.wiki: true
+            accounts.facebook: true
+            accounts.twitter: true
+            accounts.youtube: true
+            accounts.googleplus: true
+            accounts.instagram: true
+            accounts.link: true
+            accounts.reload: false
+    accounts.help:
+        description: Show a list of commands for IO-Accounts.
         default: true
-    playerlink.website:
+    accounts.website:
         description: Shows the link to a website you set.
         default: true
-    playerlink.vote:
+    accounts.vote:
         description: Shows the link to a voting website you set.
         default: true
-    playerlink.forums:
+    accounts.forums:
         description: Shows the link to a forum you set.
         default: true
-    playerlink.shop:
+    accounts.shop:
         description: Shows the link to a server shop you set.
         default: true
-    playerlink.voice:
+    accounts.voice:
         description: Shows the IP to a voice server you set.
         default: true
-    playerlink.dynmap:
+    accounts.dynmap:
         description: Shows the link to a DynMap page you set.
         default: true
-    playerlink.wiki:
+    accounts.wiki:
         description: Shows the link to a wiki you set.
         default: true
-    playerlink.facebook:
+    accounts.facebook:
         description: Shows the link to a Facebook page you set.
         default: true
-    playerlink.twitter:
+    accounts.twitter:
         description: Shows the link to a Twitter page you set.
         default: true
-    playerlink.youtube:
+    accounts.youtube:
         description: Shows the link to a YouTube page you set.
         default: true
-    playerlink.googleplus:
+    accounts.googleplus:
         description: Shows the link to a Google+ page you set.
         default: true
-    playerlink.instagram:
+    accounts.instagram:
         description: Shows the link to an Instagram page you set.
         default: true
-    playerlink.link:
+    accounts.link:
         description: Shows the link to any URL you set.
         default: true
-    playerlink.reload:
+    accounts.reload:
         description: Reload the configuration.
         default: op
