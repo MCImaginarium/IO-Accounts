@@ -1,7 +1,7 @@
 name: IO-NightVision
 main: org.iocraft.accounts.Main
 version: 1.0.0
-description: IO-NightVision is a plugin designed for a simple night vision ability and permission.
+description: IO-Accountsis a plugin designed for a simple night vision ability and permission.
 author: ioCraft.org Team
 website: https://www.iocraft.org
 
@@ -17,7 +17,7 @@ commands:
 
 permissions:
     io.nightvision.*:
-        description: Gives access to all IO-NightVision commands.
+        description: Gives access to all IO-Accountscommands.
         children:
             io.nightvision.player.*: true
             io.nightvision.reload: true
