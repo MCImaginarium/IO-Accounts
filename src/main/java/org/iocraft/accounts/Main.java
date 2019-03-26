@@ -1,5 +1,5 @@
-package org.iocraft.nightvision;
-import org.iocraft.nightvision.ColourUtils;
+package org.iocraft.accounts;
+import org.iocraft.accounts.ColourUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
@@ -21,7 +21,7 @@ public final class Main extends JavaPlugin {
     }	
 	@Override
     public void onEnable() {
-        getLogger().info("IO-NightVision has been enabled!");
+        getLogger().info("IO-Accounts has been enabled!");
         saveDefaultConfig();
     }
     @Override
@@ -63,6 +63,6 @@ public final class Main extends JavaPlugin {
     }
     @Override
     public void onDisable() {
-        getLogger().info("IO-NightVision has been disabled!");
+        getLogger().info("IO-Accounts has been disabled!");
     }
 }
