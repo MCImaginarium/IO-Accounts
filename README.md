@@ -11,11 +11,11 @@ Simple night vision ability and permission for Spigot servers.
 - Java SDK 8+
 # Example Usage + Permissions
 ## /nv
-Permission node `io.nightvision.use` or `io.nightvision.player`. Toggles night vision.
+Permission node `io.accounts.use` or `io.accounts.player`. Toggles night vision.
 ## /nv help
-Permission node `io.nightvision.use` or `io.nightvision.player` or `io.nightvision.help`.  Displays help message.
+Permission node `io.accounts.use` or `io.accounts.player` or `io.accounts.help`.  Displays help message.
 ## /nv reload 
-Permission node `io.nightvision.reload`. Reloads the configuration file.
+Permission node `io.accounts.reload`. Reloads the configuration file.
 ## Configuration Notes
 Use the regular `&` Minecraft color and formatting codes. The plugin will automatically parse them. All messages and the prefix are configurable.
 ```

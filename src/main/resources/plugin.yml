@@ -1,4 +1,4 @@
-name: IO-NightVision
+name: IO-Accounts
 main: org.iocraft.accounts.Main
 version: 1.0.0
 description: IO-Accountsis a plugin designed for a simple night vision ability and permission.
@@ -12,27 +12,27 @@ commands:
    nv:
       description: Toggles night vision.
       usage: /nv
-      permission: io.nightvision.nv
+      permission: io.accounts.nv
       permission-message: You don't have <permission>
 
 permissions:
-    io.nightvision.*:
+    io.accounts.*:
         description: Gives access to all IO-Accountscommands.
         children:
-            io.nightvision.player.*: true
-            io.nightvision.reload: true
-    io.nightvision.player.*:
+            io.accounts.player.*: true
+            io.accounts.reload: true
+    io.accounts.player.*:
         description: Gives access to all player commands.
         children:
-            io.nightvision.help: true
-            io.nightvision.nv: true
-            io.nightvision.reload: false
-    io.nightvision.help:
-        description: Show a list of commands for IO-NightVision.
+            io.accounts.help: true
+            io.accounts.nv: true
+            io.accounts.reload: false
+    io.accounts.help:
+        description: Show a list of commands for IO-Accounts.
         default: true
-    io.nightvision.nv:
+    io.accounts.nv:
         description: Toggles night vision.
         default: true
-    io.nightvision.reload:
+    io.accounts.reload:
         description: Reload the configuration.
         default: op

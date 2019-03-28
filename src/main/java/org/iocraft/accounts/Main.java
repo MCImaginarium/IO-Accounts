@@ -27,7 +27,7 @@ public final class Main extends JavaPlugin {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         Player p = (Player) sender;
-        if (cmd.getName().equalsIgnoreCase("nv") && p.hasPermission("io.nightvision.use")) {
+        if (cmd.getName().equalsIgnoreCase("nv") && p.hasPermission("io.accounts.use")) {
             if (args.length == 0) {
 				if (p.hasPotionEffect(PotionEffectType.NIGHT_VISION)) {
 					p.removePotionEffect(PotionEffectType.NIGHT_VISION);
@@ -44,11 +44,11 @@ public final class Main extends JavaPlugin {
         } else if (cmd.getName().equalsIgnoreCase("nv")) {
             if (args.length != 1) {
                 return false;
-            } else if (args[0].equalsIgnoreCase("reload") && p.hasPermission("io.nightvision.reload")) {
+            } else if (args[0].equalsIgnoreCase("reload") && p.hasPermission("io.accounts.reload")) {
                 this.reloadConfig();
                 sender.sendMessage(ChatColor.GREEN + "Configuration reloaded!");
                 return true;
-            } else if (args[0].equalsIgnoreCase("help") && p.hasPermission("io.nightvision.help")) {
+            } else if (args[0].equalsIgnoreCase("help") && p.hasPermission("io.accounts.help")) {
                 sender.sendMessage("HEADER");
                 sender.sendMessage("/nv help: " + ChatColor.GOLD + "Shows commands in the plugin.");
                 sender.sendMessage("/nv: " + ChatColor.GOLD + "Toggle night vision on/off.");
